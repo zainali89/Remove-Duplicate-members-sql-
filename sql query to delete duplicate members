@@ -1,0 +1,6 @@
+DELETE t1 FROM users_data t1
+INNER JOIN users_data t2 
+WHERE 
+    t1.user_id < t2.user_id AND 
+    t1.company = t2.company;
+    
